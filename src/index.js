@@ -20,19 +20,28 @@ function calculateFatherTwofoldOlder(fathersAge, sonsAge) {
 }
 
 // Verify function
-const fathersAge = 40;
-const sonsAge = 21;
+const fathersAge = 41;
+const sonsAge = 20;
 
 const result = calculateFatherTwofoldOlder(fathersAge, sonsAge);
+
+// String output function
+let strYear;
+
+if (result === 1) {
+  strYear = 'year';
+} else {
+  strYear = 'years';
+}
 
 // Outputting the result to the console
 if (result < 0) {
   console.log(
-    `Father was twice as old as his son ${Math.abs(result)} years ago.`
+    `Father was twice as old as his son ${Math.abs(result)} ${strYear} ago.`
   );
 } else if (result > 0) {
   console.log(
-    `The father will be twice the age of his son in ${result} years.`
+    `The father will be twice the age of his son in ${result} ${strYear}.`
   );
 } else {
   console.log(`Now the father is twice as old as his son.`);
