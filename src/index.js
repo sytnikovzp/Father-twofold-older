@@ -7,15 +7,15 @@ function calculateFatherTwofoldOlder(fathersAge, sonsAge) {
     return NaN;
   }
   if (fathersAge / 2 === sonsAge) {
-    return `${years}`;
+    return years;
   }
   if (fathersAge < sonsAge * 2) {
     years = fathersAge - sonsAge * 2;
-    return `${years}`;
+    return years;
   }
   if (fathersAge > sonsAge * 2) {
     years = fathersAge - sonsAge * 2;
-    return `${years}`;
+    return years;
   }
 }
 
