@@ -20,7 +20,7 @@ function calculateFatherTwofoldOlder(fathersAge, sonsAge) {
 }
 
 // Verify function
-const fathersAge = 41;
+const fathersAge = 39;
 const sonsAge = 20;
 
 const result = calculateFatherTwofoldOlder(fathersAge, sonsAge);
@@ -28,7 +28,7 @@ const result = calculateFatherTwofoldOlder(fathersAge, sonsAge);
 // String output function
 let strYear;
 
-if (result === 1) {
+if (Math.abs(result) === 1) {
   strYear = 'year';
 } else {
   strYear = 'years';
